@@ -1,230 +1,390 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Presale Calculator – วิลล์ฟอร์ยู</title>
+  <title>SYNCERA PJ VALLEY | AI Workforce & Smart City Stack</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    body { font-family: Inter, sans-serif; background-color: #F0F4F8; }
-    .chart-container { position: relative; width: 100%; max-width: 600px; height: 300px; }
+    body { font-family: "Inter", sans-serif; background-color: #F8FAFC; }
   </style>
 </head>
-<body class="text-gray-800 p-6">
-
-  <header class="mb-8 text-center">
-    <h1 class="text-4xl font-bold text-[#005F73]">Presale Calculator</h1>
-    <p class="text-gray-600">ปรับค่าต้นทุนและพารามิเตอร์ แล้วดูรายได้ทรัพยากรแบบเรียลไทม์</p>
+<body class="text-slate-900">
+  <header class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+      <p class="uppercase tracking-[0.3em] text-sm text-slate-300">Unified Multi-Agent Development System</p>
+      <h1 class="text-4xl md:text-5xl font-bold mt-3">SYNCERA PJ VALLEY</h1>
+      <p class="text-lg md:text-xl text-slate-200 mt-4">
+        แพลตฟอร์มยุทธศาสตร์ระดับ enterprise สำหรับการบริหารแรงงานดิจิทัลและระบบ Smart City แบบบูรณาการ
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="px-4 py-2 rounded-full bg-emerald-500/20 text-emerald-200 text-sm">AI Workforce Orchestration</span>
+        <span class="px-4 py-2 rounded-full bg-sky-500/20 text-sky-200 text-sm">Smart City + Civic Stack</span>
+        <span class="px-4 py-2 rounded-full bg-amber-400/20 text-amber-200 text-sm">Sovereign Cloud Ready</span>
+      </div>
+    </div>
   </header>
 
-  <section id="platform-planes" class="mb-8">
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <div class="flex flex-col gap-2 mb-6">
-        <p class="text-sm uppercase tracking-widest text-[#005F73]">SYNCERA PJ VALLEY</p>
-        <h2 class="text-2xl font-semibold text-[#0A9396]">Control Plane vs Data/Service Plane</h2>
+  <main class="max-w-6xl mx-auto px-6 py-12 space-y-12">
+    <section class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
+        <h2 class="text-2xl font-semibold text-emerald-700">AI Workforce Orchestration</h2>
+        <p class="text-slate-600 mt-2">
+          ระบบบริหารแรงงานดิจิทัล/เอไอ เพื่อเพิ่มประสิทธิภาพการทำงานร่วมกันของคน เครื่อง และตัวแทน AI ในระดับเมืองและองค์กร.
+        </p>
+        <div class="mt-4 space-y-3">
+          <div class="p-4 rounded-xl bg-emerald-50">
+            <p class="font-semibold">Learning Path</p>
+            <p class="text-sm text-slate-600">ออกแบบเส้นทางการเรียนรู้แบบ Dynamic ตามบริบทงานและบทบาท (PM, SA, UX/UI, Dev, Data, QA, Tech Writer, DevOps)</p>
+          </div>
+          <div class="p-4 rounded-xl bg-emerald-50">
+            <p class="font-semibold">Skills Graph</p>
+            <p class="text-sm text-slate-600">แผนที่ทักษะเชิงเครือข่ายพร้อมการเชื่อมโยงข้ามโดเมน, job family, และมาตรฐาน competency</p>
+          </div>
+          <div class="p-4 rounded-xl bg-emerald-50">
+            <p class="font-semibold">Growth Prediction</p>
+            <p class="text-sm text-slate-600">พยากรณ์เส้นทางเติบโตและการจัดสรรทรัพยากรด้วย AI analytics + behavioral signals</p>
+          </div>
+        </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="border-l-4 border-[#005F73] bg-slate-50 p-4 rounded-md">
-          <h3 class="text-xl font-semibold text-[#005F73] mb-3">Control Plane</h3>
-          <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Identity + Consent</li>
-            <li>Policy-as-Code</li>
-            <li>Audit</li>
-            <li>Risk Tiering</li>
-            <li>Model / Agent Registry</li>
+
+      <div class="bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
+        <h2 class="text-2xl font-semibold text-sky-700">Smart City + Civic Stack</h2>
+        <p class="text-slate-600 mt-2">
+          โครงสร้างพื้นฐานดิจิทัลเพื่อเมืองอัจฉริยะ พร้อม governance ที่ยืดหยุ่นและปลอดภัย.
+        </p>
+        <div class="mt-4 space-y-3">
+          <div class="p-4 rounded-xl bg-sky-50">
+            <p class="font-semibold">Citizen Services</p>
+            <p class="text-sm text-slate-600">บริการประชาชนแบบ Omni-channel พร้อม Digital ID และ workflow อัตโนมัติ</p>
+          </div>
+          <div class="p-4 rounded-xl bg-sky-50">
+            <p class="font-semibold">Public Safety</p>
+            <p class="text-sm text-slate-600">ศูนย์สั่งการร่วม พร้อม AI monitoring, alert orchestration, และ response playbook</p>
+          </div>
+          <div class="p-4 rounded-xl bg-sky-50">
+            <p class="font-semibold">Transportation Layer</p>
+            <p class="text-sm text-slate-600">ระบบขนส่งอัจฉริยะพร้อมข้อมูลเรียลไทม์, mobility demand forecasting, และ optimization</p>
+          </div>
+          <div class="p-4 rounded-xl bg-sky-50">
+            <p class="font-semibold">Soft Infrastructure Governance</p>
+            <p class="text-sm text-slate-600">โมเดลธรรมาภิบาลดิจิทัล เพื่อกำกับข้อมูลและบริการสาธารณะอย่างโปร่งใส</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
+      <h3 class="text-2xl font-semibold text-slate-800">UMADS 8 Roles Operating Model</h3>
+      <p class="text-slate-600 mt-2">
+        โครงสร้างการทำงานแบบ enterprise ที่ผสาน multi-agent roles เพื่อขับเคลื่อนกลยุทธ์จนถึงการส่งมอบจริง.
+      </p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4 text-sm text-slate-600">
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">PM</p>
+          <p>กำหนด value, scope, และ stakeholder alignment</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">SA</p>
+          <p>ออกแบบสถาปัตยกรรมระบบและ integration blueprint</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">UX/UI</p>
+          <p>ออกแบบประสบการณ์ผู้ใช้และ service journey</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">Dev</p>
+          <p>พัฒนาโมดูลและ automation pipeline</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">Data</p>
+          <p>บริหารข้อมูล, analytics, และ AI models</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">QA</p>
+          <p>ทดสอบคุณภาพ, compliance, และ risk controls</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">Tech Writer</p>
+          <p>จัดทำเอกสารสื่อสารเชิงเทคนิคและคู่มือปฏิบัติ</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">DevOps</p>
+          <p>ดูแล infrastructure, CI/CD, และ observability</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-slate-900 text-white rounded-2xl p-8">
+      <div class="grid lg:grid-cols-3 gap-6">
+        <div>
+          <h3 class="text-xl font-semibold">Sovereign Cloud + Data Residency</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-200">
+            <li>PDPA + Cross-Border Policy Engine</li>
+            <li>Zero-Trust Architecture</li>
+            <li>Multi-region deployment blueprint</li>
           </ul>
         </div>
-        <div class="border-l-4 border-[#0A9396] bg-slate-50 p-4 rounded-md">
-          <h3 class="text-xl font-semibold text-[#0A9396] mb-3">Data / Service Plane</h3>
-          <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Citizen Services</li>
-            <li>Public Safety</li>
-            <li>Transportation</li>
-            <li>Case Management</li>
+        <div>
+          <h3 class="text-xl font-semibold">Energy Grid / Solar Farm Intelligence</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-200">
+            <li>Renewable forecasting</li>
+            <li>Carbon reduction model</li>
+            <li>Smart energy dispatch</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Digital ID / Wallet Integration</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-200">
+            <li>OAuth2 / OIDC federation</li>
+            <li>Citizen ID binding</li>
+            <li>Transaction audit trail</li>
           </ul>
         </div>
       </div>
-      <div class="mt-6 border border-dashed border-[#94D2BD] rounded-md p-4 bg-white">
-        <h3 class="text-lg font-semibold text-[#0A9396] mb-3">Closed-loop</h3>
-        <div class="flex flex-wrap items-center gap-2 text-gray-700 font-medium">
-          <span class="px-3 py-1 rounded-full bg-[#E9F5F5]">Service Outcome</span>
-          <span>→</span>
-          <span class="px-3 py-1 rounded-full bg-[#E9F5F5]">Evidence Store</span>
-          <span>→</span>
-          <span class="px-3 py-1 rounded-full bg-[#E9F5F5]">Skills Graph</span>
-          <span>→</span>
-          <span class="px-3 py-1 rounded-full bg-[#E9F5F5]">Learning Path</span>
-          <span>→</span>
-          <span class="px-3 py-1 rounded-full bg-[#E9F5F5]">Re-assignment</span>
-          <span class="text-[#005F73]">↺</span>
-          <span class="text-sm text-gray-500">กลับไปที่ Service Outcome</span>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
+        <h3 class="text-xl font-semibold text-amber-600">Smart Economy Layer</h3>
+        <ul class="mt-4 space-y-2 text-sm text-slate-600">
+          <li>MSME platform และระบบจับคู่ทุน/คำปรึกษา</li>
+          <li>Startup incubator + Venture readiness</li>
+          <li>Digital commerce rails สำหรับ ecosystem</li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
+        <h3 class="text-xl font-semibold text-purple-600">Valley Ecosystem Operations Hub</h3>
+        <ul class="mt-4 space-y-2 text-sm text-slate-600">
+          <li>Dashboard รวม KPI และการเฝ้าระวัง</li>
+          <li>Monitoring + Alerts + Compliance review</li>
+          <li>Humanic HPE Integration สำหรับ personalization engine</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+        <div>
+          <h3 class="text-2xl font-semibold text-slate-800">Pricing & Revenue Calculator</h3>
+          <p class="text-slate-600 mt-2">
+            โมดูลคำนวณต้นทุนและรายได้แบบย่อ เพื่อรองรับการออกแบบแพ็กเกจบริการและการตั้งราคาเบื้องต้น.
+          </p>
+        </div>
+        <div class="text-sm text-slate-500 bg-slate-50 px-4 py-2 rounded-full">
+          สูตรคำนวณสามารถปรับให้สอดคล้องกับโมเดลรายได้ของ SYNCERA
         </div>
       </div>
-      <div class="mt-6 bg-[#F8FAFC] border border-[#E2E8F0] rounded-md p-4">
-        <h3 class="text-lg font-semibold text-[#005F73] mb-1">Routing Logic (Signature)</h3>
-        <p class="text-xl font-semibold text-gray-800">Risk × Skill-fit × SLA × Cost</p>
-        <p class="text-sm text-gray-500">DNA ของ Workforce Orchestration</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="presale-calculator" class="bg-white p-6 rounded-lg shadow-lg">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-      <!-- Input Form -->
-      <div class="space-y-4">
-        <h2 class="text-2xl font-semibold text-[#0A9396]">Input Parameters</h2>
-
-        <div>
-          <label class="block mb-1">C_push (฿/push)</label>
-          <input id="inp-cpush" type="number" step="0.0001" class="w-full p-2 border rounded" value="0.0008"/>
+      <div class="grid lg:grid-cols-2 gap-6 mt-6">
+        <div class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-slate-600">C_push (฿/push)</label>
+              <input id="calc-cpush" type="number" step="0.0001" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="0.0008"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">C_event (฿/event)</label>
+              <input id="calc-cevent" type="number" step="0.001" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="0.004"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">C_gps (฿/sample)</label>
+              <input id="calc-cgps" type="number" step="0.00001" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="0.00006"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">C_presence (฿/heartbeat)</label>
+              <input id="calc-cpresence" type="number" step="0.0001" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="0.0005"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">C_mb (฿/MB)</label>
+              <input id="calc-cmb" type="number" step="0.01" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="0.40"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">Fixed Per Trip (฿)</label>
+              <input id="calc-fixed" type="number" step="0.1" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="0.80"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">D_online (drivers)</label>
+              <input id="calc-donline" type="number" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="8"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">Margin (%)</label>
+              <input id="calc-margin" type="number" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="40"/>
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-slate-600">Data Events (events/trip)</label>
+              <input id="calc-devents" type="number" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="20"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">GPS Samples (samples/trip)</label>
+              <input id="calc-gpsamples" type="number" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="180"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">Presence (heartbeats/trip)</label>
+              <input id="calc-presence" type="number" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="8"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">Storage (MB/trip)</label>
+              <input id="calc-storage" type="number" step="0.1" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="0.6"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-600">Trip Duration (min)</label>
+              <input id="calc-duration" type="number" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2" value="10"/>
+            </div>
+          </div>
+          <button id="calc-run" class="w-full rounded-lg bg-emerald-600 text-white py-2 font-semibold hover:bg-emerald-700">
+            คำนวณราคา
+          </button>
         </div>
-
-        <div>
-          <label class="block mb-1">C_event (฿/event)</label>
-          <input id="inp-cevent" type="number" step="0.001" class="w-full p-2 border rounded" value="0.004"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">C_gps (฿/sample)</label>
-          <input id="inp-cgps" type="number" step="0.00001" class="w-full p-2 border rounded" value="0.00006"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">C_presence (฿/heartbeat)</label>
-          <input id="inp-cpresence" type="number" step="0.0001" class="w-full p-2 border rounded" value="0.0005"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">C_mb (฿/MB)</label>
-          <input id="inp-cmb" type="number" step="0.01" class="w-full p-2 border rounded" value="0.40"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">FixedPerTrip (฿)</label>
-          <input id="inp-fixed" type="number" step="0.1" class="w-full p-2 border rounded" value="0.80"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">D_online (drivers)</label>
-          <input id="inp-donline" type="number" class="w-full p-2 border rounded" value="8"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">DataEvents (events/trip)</label>
-          <input id="inp-devents" type="number" class="w-full p-2 border rounded" value="20"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">GPSsamples (samples/trip)</label>
-          <input id="inp-gpsamples" type="number" class="w-full p-2 border rounded" value="180"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">Presence (heartbeats/trip)</label>
-          <input id="inp-presence" type="number" class="w-full p-2 border rounded" value="8"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">StorageMB (MB/trip)</label>
-          <input id="inp-storage" type="number" step="0.1" class="w-full p-2 border rounded" value="0.6"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">Margin (%)</label>
-          <input id="inp-margin" type="number" class="w-full p-2 border rounded" value="40"/>
-        </div>
-
-        <div>
-          <label class="block mb-1">Trip Duration (min)</label>
-          <input id="inp-duration" type="number" class="w-full p-2 border rounded" value="10"/>
-        </div>
-
-        <button id="btn-calc" class="mt-4 w-full bg-[#EE9B00] hover:bg-[#CA6702] text-white font-bold py-2 rounded">
-          Calculate
-        </button>
-      </div>
-
-      <!-- Results & Chart -->
-      <div>
-        <h2 class="text-2xl font-semibold text-[#0A9396] mb-4">Results</h2>
-        <div class="space-y-2 text-gray-700 mb-6">
-          <p>TotalCostPerTrip: <span id="out-cost">–</span> ฿</p>
-          <p>SellTrip: <span id="out-sellTrip">–</span> ฿</p>
-          <p>Revenue/Min: <span id="out-revMin">–</span> ฿</p>
-          <p>Revenue/Sec: <span id="out-revSec">–</span> ฿</p>
-        </div>
-        <div class="chart-container">
-          <canvas id="revenueChart"></canvas>
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+          <h4 class="text-lg font-semibold text-slate-800">ผลลัพธ์การคำนวณ</h4>
+          <div class="mt-4 space-y-3 text-slate-600">
+            <div class="flex items-center justify-between">
+              <span>Total Cost / Trip</span>
+              <span id="calc-out-cost" class="font-semibold text-slate-800">–</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span>Sell Trip (with margin)</span>
+              <span id="calc-out-sell" class="font-semibold text-slate-800">–</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span>Revenue / Minute</span>
+              <span id="calc-out-rev-min" class="font-semibold text-slate-800">–</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span>Revenue / Second</span>
+              <span id="calc-out-rev-sec" class="font-semibold text-slate-800">–</span>
+            </div>
+          </div>
+          <div class="mt-6 text-xs text-slate-500">
+            หมายเหตุ: สูตรนี้สามารถต่อยอดเพื่อรองรับ subscription, SLA tiers, หรือ multi-region cost ได้
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <section class="bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
+      <h3 class="text-2xl font-semibold text-slate-800">Delivery Roadmap (3 Horizons)</h3>
+      <div class="grid md:grid-cols-3 gap-4 mt-4 text-sm text-slate-600">
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">Horizon 1: Foundation</p>
+          <p>Governance, data platform, digital ID, และ AI workforce baseline</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">Horizon 2: Integration</p>
+          <p>เชื่อมโยง civic stack, smart economy, และ energy intelligence</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50">
+          <p class="font-semibold text-slate-800">Horizon 3: Optimization</p>
+          <p>Predictive orchestration, city-wide automation, และ continuous growth</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-emerald-600 to-sky-600 text-white rounded-2xl p-8">
+      <div class="grid lg:grid-cols-3 gap-6">
+        <div>
+          <h3 class="text-xl font-semibold">สิ่งที่ต้องทำต่อ (Next Steps)</h3>
+          <p class="text-sm text-emerald-100 mt-2">
+            เริ่มจากการวาง baseline และจัดลำดับการส่งมอบเพื่อให้เกิดผลเร็ว.
+          </p>
+        </div>
+        <div class="text-sm text-emerald-50 space-y-2">
+          <p class="font-semibold">Phase 0: Alignment</p>
+          <ul class="list-disc list-inside">
+            <li>Kickoff กับ stakeholders และกำหนด KPI</li>
+            <li>เก็บ requirement จากหน่วยงานเมือง + ecosystem</li>
+            <li>กำหนด data governance & PDPA readiness</li>
+          </ul>
+        </div>
+        <div class="text-sm text-emerald-50 space-y-2">
+          <p class="font-semibold">Phase 1: Pilot</p>
+          <ul class="list-disc list-inside">
+            <li>เลือก use case เริ่มต้น 2-3 โดเมน</li>
+            <li>สร้าง MVP ของ AI Workforce + Civic Stack</li>
+            <li>ตั้ง dashboard, monitoring, และ feedback loop</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
+      <h3 class="text-2xl font-semibold text-slate-800">Merge Conflict Resolution Playbook</h3>
+      <p class="text-slate-600 mt-2">
+        แนวทางปฏิบัติเมื่อเกิดความขัดแย้งในการผสานโค้ด เพื่อให้ทีมตัดสินใจและส่งมอบได้อย่างรวดเร็ว.
+      </p>
+      <div class="grid lg:grid-cols-2 gap-6 mt-4 text-sm text-slate-600">
+        <div class="space-y-3">
+          <div class="p-4 rounded-xl bg-slate-50">
+            <p class="font-semibold text-slate-800">1. ตรวจสอบสถานะ</p>
+            <p>รัน <span class="font-mono">git status</span> เพื่อดูไฟล์ที่ conflict และสาขาปัจจุบัน.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50">
+            <p class="font-semibold text-slate-800">2. เปิดไฟล์ที่ชนกัน</p>
+            <p>ค้นหา marker <span class="font-mono">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>, <span class="font-mono">=======</span>, <span class="font-mono">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> เพื่อดูส่วนที่ต้องเลือก.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50">
+            <p class="font-semibold text-slate-800">3. ตัดสินใจเวอร์ชันสุดท้าย</p>
+            <p>เลือกเก็บการเปลี่ยนแปลงฝั่งใดฝั่งหนึ่ง หรือผสานทั้งสองให้สอดคล้องกัน.</p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="p-4 rounded-xl bg-slate-50">
+            <p class="font-semibold text-slate-800">4. บันทึกการแก้ไข</p>
+            <p>ลบ marker ทั้งหมด แล้วจัดรูปแบบเนื้อหาให้ถูกต้อง.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50">
+            <p class="font-semibold text-slate-800">5. เตรียม commit</p>
+            <p>รัน <span class="font-mono">git add .</span> เพื่อ mark ว่าแก้ไขเรียบร้อย.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50">
+            <p class="font-semibold text-slate-800">6. บันทึกผลลัพธ์</p>
+            <p>สร้าง commit ใหม่ด้วยข้อความเช่น <span class="font-mono">"Resolve merge conflict"</span>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-slate-500 py-6">
+    © 2024 SYNCERA PJ VALLEY — Unified Multi-Agent Development System
+  </footer>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const ctx = document.getElementById('revenueChart').getContext('2d');
-      const revenueChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: ['SellTrip'],
-          datasets: [{
-            label: '฿ per trip',
-            data: [0],
-            backgroundColor: '#0A9396'
-          }]
-        },
-        options: {
-          responsive: true,
-          scales: {
-            y: { beginAtZero: true, title: { display: true, text: 'Baht' } }
-          }
-        }
-      });
+    const calculatePricing = () => {
+      const C_push = Number(document.getElementById('calc-cpush').value);
+      const C_event = Number(document.getElementById('calc-cevent').value);
+      const C_gps = Number(document.getElementById('calc-cgps').value);
+      const C_presence = Number(document.getElementById('calc-cpresence').value);
+      const C_mb = Number(document.getElementById('calc-cmb').value);
+      const FixedPerTrip = Number(document.getElementById('calc-fixed').value);
+      const D_online = Number(document.getElementById('calc-donline').value);
+      const DataEvents = Number(document.getElementById('calc-devents').value);
+      const GPSsamples = Number(document.getElementById('calc-gpsamples').value);
+      const Presence = Number(document.getElementById('calc-presence').value);
+      const StorageMB = Number(document.getElementById('calc-storage').value);
+      const margin = Number(document.getElementById('calc-margin').value) / 100;
+      const tripDuration = Number(document.getElementById('calc-duration').value);
 
-      document.getElementById('btn-calc').addEventListener('click', () => {
-        // read inputs
-        const C_push       = +document.getElementById('inp-cpush').value;
-        const C_event      = +document.getElementById('inp-cevent').value;
-        const C_gps        = +document.getElementById('inp-cgps').value;
-        const C_presence   = +document.getElementById('inp-cpresence').value;
-        const C_mb         = +document.getElementById('inp-cmb').value;
-        const FixedPerTrip = +document.getElementById('inp-fixed').value;
-        const D_online     = +document.getElementById('inp-donline').value;
-        const DataEvents   = +document.getElementById('inp-devents').value;
-        const GPSsamples   = +document.getElementById('inp-gpsamples').value;
-        const Presence     = +document.getElementById('inp-presence').value;
-        const StorageMB    = +document.getElementById('inp-storage').value;
-        const margin       = +document.getElementById('inp-margin').value / 100;
-        const tripDuration = +document.getElementById('inp-duration').value;
+      const totalCostPerTrip = (D_online * C_push)
+        + (DataEvents * C_event)
+        + (GPSsamples * C_gps)
+        + (Presence * C_presence)
+        + (StorageMB * C_mb)
+        + FixedPerTrip
+        + (1 * C_push);
 
-        // cost formula
-        const TotalCostPerTrip =
-          (D_online * C_push) +
-          (DataEvents * C_event) +
-          (GPSsamples * C_gps) +
-          (Presence * C_presence) +
-          (StorageMB * C_mb) +
-          FixedPerTrip +
-          (1 * C_push); // rider push
+      const sellTrip = totalCostPerTrip / (1 - margin);
+      const revenuePerMinute = sellTrip / tripDuration;
+      const revenuePerSecond = sellTrip / (tripDuration * 60);
 
-        const SellTrip = TotalCostPerTrip / (1 - margin);
-        const RevMin   = SellTrip / tripDuration;
-        const RevSec   = SellTrip / (tripDuration * 60);
+      document.getElementById('calc-out-cost').innerText = `${totalCostPerTrip.toFixed(3)} ฿`;
+      document.getElementById('calc-out-sell').innerText = `${sellTrip.toFixed(3)} ฿`;
+      document.getElementById('calc-out-rev-min').innerText = `${revenuePerMinute.toFixed(3)} ฿/min`;
+      document.getElementById('calc-out-rev-sec').innerText = `${revenuePerSecond.toFixed(5)} ฿/sec`;
+    };
 
-        // update UI
-        document.getElementById('out-cost').innerText     = TotalCostPerTrip.toFixed(3);
-        document.getElementById('out-sellTrip').innerText = SellTrip.toFixed(3);
-        document.getElementById('out-revMin').innerText   = RevMin.toFixed(3);
-        document.getElementById('out-revSec').innerText   = RevSec.toFixed(5);
-
-        // update chart
-        revenueChart.data.datasets[0].data = [SellTrip];
-        revenueChart.update();
-      });
-    });
+    document.getElementById('calc-run').addEventListener('click', calculatePricing);
   </script>
-
 </body>
 </html>
